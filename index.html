@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-mRCVjw7U5rAI7JHEwIYJ2UM6uVoYsEMopp4l91upjHH6FkisqbJmb2N6uS6oOSBdg"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS Styles-->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Bootstrap js and jQuery-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Custom js for slider-->
+    <script type="text/javascript" src="./custom.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7.0.6/swiper-bundle.min.css"
+    />
+    <!-- partial -->
+    <script src="https://unpkg.com/swiper@7.0.6/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <script>
+      $(document).ready(function () {
+        $(".team-slider .owl-carousel").owlCarousel({
+          items: 3, // Display three images per slide
+          nav: true, // Show navigation arrows
+          loop: true, // Enable infinite loop
+          margin: 15, // Add spacing between images
+          responsive: {
+            0: {
+              items: 1, // On small screens, show one image per slide
+            },
+            768: {
+              items: 2, // On medium screens, show two images per slide
+            },
+            992: {
+              items: 3, // On larger screens, show three images per slide
+            },
+          },
+        });
+      });
+    </script>
+
+    <title>Homepage New</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
+    <div class="main-container-wrapper">
+      <div class="main-container">
+        <header class="header-container main-container extended-header">
+          <nav class="navbar navbar-expand-lg extended-nav rm-pd">
+            <div class="header-logo">
+              <a href="#"
+                ><img src="./images/header-logo.svg" alt="header-logo"
+              /></a>
+              <span class="header-text" style="display: none"
+                >SolarRegina GmbH</span
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                id="navbarToggler"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div
+              class="collapse navbar-collapse categories-container"
+              id="navbarNav"
+            >
+              <nav class="categories">
+                <ul class="navbar-nav list-inline">
+                  <li class="list-inline-item">
+                    <div class="link">
+                      <a href="#unsereAngebote">Unsere Angebote</a>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="link">
+                      <a href="#unsereExpertise">Unsere Expertise</a>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="link">
+                      <a href="#unserTeam">Unser Team</a>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="link">
+                      <a href="#erstanfrageFormular">Erstanfrage-Formular</a>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="link">
+                      <a href="#faq">FAQ</a>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="link">
+                      <a href="#footer">Kontakt</a>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="link">
+                      <a href="#footer">Impressum</a>
+                    </div>
+                  </li>
+                  <li class="list-inline-item">
+                    <div class="link">
+                      <a href="#datenschutz">Datenschutz</a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </nav>
+        </header>
+        <section class="hero-image-container-wrapper">
+          <div class="hero-image-container">
+            <img src="./images/hero-image-2.png" alt="hero-image" />
+            <div class="hero-content">
+              <p class="title">SolarRegina GmbH</p>
+              <p class="content">
+                Die Sonnenkönigin aus Soltau – spezialisiert auf
+                umweltfreundliche Heizungs- und Klimatechnik
+              </p>
+              <div class="link-wrapper">
+                <div class="link-container">
+                  <a href="#" class="link">Unsere Angebote</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="unsereAngebote" class="hero-slider-container-wrapper">
+          <div class="hero-slider-container">
+            <div class="slider-title">
+              <p class="title">Unsere Angebote</p>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slider-thumbnail">
+                  <img src="./images/hero-slider.jpg" alt="" />
+                  <div class="slider-content">
+                    <p class="title">Beratung</p>
+                    <p class="subtitle">
+                      Wir suchen die beste Lösung für Ihr Haus.
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide slider-thumbnail">
+                  <img src="./images/hero-slider.jpg" alt="" />
+                </div>
+                <div class="swiper-slide slider-thumbnail">
+                  <img src="./images/hero-slider.jpg" alt="" />
+                </div>
+                <div class="swiper-slide slider-thumbnail">
+                  <img src="./images/hero-slider.jpg" alt="" />
+                </div>
+                <div class="swiper-slide slider-thumbnail">
+                  <img src="./images/hero-slider.jpg" alt="" />
+                </div>
+                <div class="swiper-slide slider-thumbnail">
+                  <img src="./images/hero-slider.jpg" alt="" />
+                </div>
+                <!-- <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div> -->
+              </div>
+              <!-- Add Pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+          </div>
+        </section>
+        <section class="additional-info-container-wrapper">
+          <div class="additional-info-container">
+            <div class="hero">
+              <img src="./images/wir-tun-etwas.png" alt="wir-tun-etwas" />
+            </div>
+            <div class="content">
+              <p class="label">
+                Alle reden von Klimaschutz und Energiepreisen:
+              </p>
+              <p class="heading">Wir tun etwas – gemeinsam mit Ihnen.</p>
+              <p class="info">
+                Wir holen Ihnen die Sonnenwärme ins Haus! Oder, falls Sie das
+                heiße Duschwasser bereits über Solarkollektoren erzeugen:
+                Erweitern Sie die Anlage für Heizzwecke! Wir sind Ihr Partner
+                bei der Suche nach der besten Kombination von Solarthermie und
+                Wärmepumpe. <br />
+                Stöbern Sie auf dieser Website. <br />
+                Füllen Sie das <b>Erstanfrage-Formular</b> aus. So erfahren wir
+                alles Notwendige vor einer Hausbegehung und Energieberatung.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="seperator-container-wrapper">
+          <div class="seperator"></div>
+        </section>
+        <section class="flow-design-wrapper">
+          <div class="flow-design-container">
+            <div class="title-container">
+              <p class="title">So funktioniert Solarthermie</p>
+            </div>
+            <div class="hero">
+              <img src="./images/solarthermie.png" alt="solarthermie" />
+            </div>
+            <div class="info-container">
+              <p class="info">
+                Für die Sonnenkollektoren eignet sich am besten ein
+                unverschattetes Dach, das nach Süden zeigt. Südost- oder
+                Südwestlagen eignen sich auch. Eine Dachneigung zwischen 30 und
+                60 Grad ist günstig. Flachkollektoren sind preislich günstiger,
+                sammeln aber nicht so viel Wärme ein wie Röhrenkollektoren.
+                Weitere Infos zur Solarthermie finden Sie unter <b>FAQ.</b>
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="additional-info-container-wrapper">
+          <div class="additional-info-container reverse">
+            <div class="hero">
+              <img
+                src="./images/Energieeffizienz-Beratung.png"
+                alt="Energieeffizienz-Beratung"
+              />
+            </div>
+            <div class="content">
+              <p class="heading">Energieeffizienz-Beratung</p>
+              <p class="info">
+                Energieberatung heißt, dass technische Geräte oder Immobilien
+                energetisch bilanziert und begutachtet werden. Die
+                Berater/-innen geben wichtige Ratschläge, welche Neu- oder
+                Umbauten sich eignen. Die Energieeffizienz-Beratung, wie wir sie
+                betreiben, geht ein Stück weiter „Unsere zertifizierten
+                Expert/-innen eröffnen Ihnen außerdem den Weg zur Förderung des
+                Bau-, Erweiterungs- oder Sanierungsvorhabens mit öffentlichen
+                Mitteln. Die Kosten für die Energieeffizienz-Beratung werden mit
+                bis zu 50 Prozent vom Bund getragen.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="additional-info-container-wrapper">
+          <div class="additional-info-container">
+            <div class="hero">
+              <img
+                src="./images/Wärmepumpen-Technologie.png"
+                alt="Wärmepumpen-Technologie"
+              />
+            </div>
+            <div class="content">
+              <p class="heading">Wärmepumpen-Technologie</p>
+              <p class="info">
+                Grundsätzlich wandeln Wärmepumpen Sonnenenergie, die bereits in
+                der Umwelt gespeichert ist, in Wärme um. Dabei können sie Erde,
+                Luft oder Grundwasser „anzapfen“. Wie hoch dabei der
+                Energiegewinn ist, variiert nach den örtlichen Gegebenheiten.
+                Sehr häufig wird die Oberflächen-Erdwärme genutzt. Ein
+                intelligentes und nachhaltiges System entsteht beispielsweise,
+                wenn die Wärmepumpen-Technologie mit Solarthermie zur
+                Heizungsunterstützung genutzt wird. Das bedeutet konkret, dass
+                die Wärmepumpe sicherstellt, dass auch bei niedrigen
+                Vorlauftemperaturen die Räume warm werden. Wer sich gut beraten
+                lässt, kann außerdem viel Geld sparen, weil Wärmepumpen aus
+                verschiedenen Töpfen finanziell gefördert werden.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="unserTeam" class="team-slider owl-carousel-section">
+          <div class="title-container" style="margin: 40px 0">
+            <p class="title text-center">UNSER TEAM</p>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="item-image">
+                <img src="./images/unser-team.png" alt="unser-team" />
+              </div>
+              <div class="card-body">
+                <div class="card-body-content"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-image">
+                <img src="./images/unser-team.png" alt="unser-team" />
+              </div>
+              <div class="card-body">
+                <div class="card-body-content"></div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item-image">
+                <img src="./images/unser-team.png" alt="unser-team" />
+              </div>
+              <div class="card-body">
+                <div class="card-body-content"></div>
+              </div>
+            </div>
+
+            <!-- Add more items as needed -->
+          </div>
+        </section>
+
+        <section
+          id="erstanfrageFormular"
+          class="inquiry-form-container-wrapper"
+        >
+          <div class="inquiry-form-container">
+            <div class="inquiry-title">
+              <p class="title">Erstanfrage-Formular</p>
+            </div>
+            <div class="inquiry-info">
+              <p class="text">
+                Erweitern Sie die Anlage für Heizzwecke. Wir sind Ihr Partner
+                bei der Suche nach der besten Kombination von Solarthermie und
+                Wärmepumpe.
+              </p>
+            </div>
+            <div class="inquiry-form">
+              <div class="form-title">
+                <p class="title">Checkliste Solarthermie</p>
+              </div>
+              <form action="submit">
+                <div class="form-label">
+                  <span class="label">Wie ist Ihr Haus ausgestattet?</span>
+                </div>
+                <div class="form-input">
+                  <input type="text" />
+                </div>
+                <div class="radio-selection-wrapper">
+                  <div class="radio-selection-container">
+                    <div class="form-label">
+                      <span class="label"
+                        >Welche Ausrichtung hat das Dach?</span
+                      >
+                    </div>
+                    <div class="radio-selection">
+                      <div class="selection">
+                        <input type="radio" name="group" value="sud" />
+                        <label>Süd</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="sudost" />
+                        <label>Südost</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="sudwest" />
+                        <label>Südwest</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="ost" />
+                        <label>Ost</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="west" />
+                        <label>West</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="nord" />
+                        <label>Nord</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-selection-container">
+                    <div class="form-label">
+                      <span class="label"
+                        >Wie groß ist die Dachneigung (0-Grad bei
+                        Flachdach)?</span
+                      >
+                    </div>
+                    <div class="radio-selection">
+                      <div class="selection">
+                        <input type="radio" name="group" value="0" />
+                        <label>0 &deg;</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="15" />
+                        <label>15 &deg;</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="30" />
+                        <label>30 &deg;</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="60" />
+                        <label>60 &deg;</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-seperator"></div>
+                <div class="radio-selection-wrapper">
+                  <div class="radio-selection-container">
+                    <div class="form-label mb-3">
+                      <span class="label"
+                        >Wie viel Fläche kommt für Solarkollektoren in
+                        Frage?</span
+                      >
+                    </div>
+                    <div class="form-input-wrapper extended main">
+                      <div class="form-label">
+                        <span class="label"
+                          >Genaue Maße (Angabe in m) <br />
+                          Breite × Höhe</span
+                        >
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended">
+                      <div class="form-label">
+                        <span class="label">Wann wurde das Haus gebaut?</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="datepicker"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended">
+                      <div class="form-label">
+                        <span class="label">Wie heizen Sie bisher?</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended">
+                      <div class="form-label">
+                        <span class="label"
+                          >Welchen Brennstoff nutzen Sie?</span
+                        >
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended">
+                      <div class="form-label">
+                        <span class="label"
+                          >Und welche Art des Heizkessels?</span
+                        >
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended">
+                      <div class="form-label">
+                        <span class="label"
+                          >Wie erwärmen Sie das Brauchwasser?</span
+                        >
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="radio-selection-container">
+                    <div class="form-label">
+                      <span class="label"
+                        >Was soll Ihre Solarthermieanlage leisten?</span
+                      >
+                    </div>
+                    <div class="radio-selection">
+                      <div class="selection">
+                        <input
+                          type="radio"
+                          name="group"
+                          value="nur-warmwasserbereitung"
+                        />
+                        <label>nur Warmwasserbereitung</label>
+                      </div>
+                      <div class="selection">
+                        <input
+                          type="radio"
+                          name="group"
+                          value="heizungsunterstützung"
+                        />
+                        <label>Heizungsunterstützung</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="beides" />
+                        <label>beides</label>
+                      </div>
+                      <div class="selection mt-3">
+                        <input
+                          type="radio"
+                          name="group"
+                          value="mit-anschluss-geschirrspüler"
+                        />
+                        <label>mit Anschluss Geschirrspüler</label>
+                      </div>
+                      <div class="selection">
+                        <input
+                          type="radio"
+                          name="group"
+                          value="mit-anschluss-waschmaschine"
+                        />
+                        <label>mit Anschluss Waschmaschine</label>
+                      </div>
+                      <div class="selection">
+                        <input type="radio" name="group" value="beides" />
+                        <label>beides</label>
+                      </div>
+                      <div
+                        class="form-input-wrapper"
+                        style="margin: 50px 0 30px 0"
+                      >
+                        <div class="form-label">
+                          <span class="label"
+                            >Wie groß ist Ihr täglicher Warmwasserverbrauch
+                            (Angabe in Liter)?</span
+                          >
+                        </div>
+                        <div class="form-input custom">
+                          <select name="options">
+                            <option value="" disabled selected></option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <!-- Add more options as needed -->
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-input-wrapper extended">
+                        <div class="form-label">
+                          <span class="label"
+                            >Wie viel Wohnfläche wollen Sie beheizen? (m²)</span
+                          >
+                        </div>
+                        <div class="form-input custom">
+                          <input type="text" />
+                        </div>
+                      </div>
+                      <div class="form-label">
+                        <span class="label"
+                          >Welche Kollektoren bevorzugen Sie?</span
+                        >
+                      </div>
+                      <div class="selection">
+                        <input
+                          type="radio"
+                          name="group"
+                          value="flachkollektoren"
+                        />
+                        <label>Flachkollektoren</label>
+                      </div>
+                      <div class="selection">
+                        <input
+                          type="radio"
+                          name="group"
+                          value="röhrenkollektoren"
+                        />
+                        <label>Röhrenkollektoren</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-label">
+                  <span class="label"
+                    >Weitere Informationen, die Sie uns mitteilen wollen</span
+                  >
+                </div>
+                <div class="form-input comment">
+                  <input type="text" />
+                </div>
+                <div class="form-seperator two" style="margin: 60px 0"></div>
+                <div class="form-label">
+                  <span class="label">Angaben zu Ihrer Person:</span>
+                </div>
+                <div class="personal-details-wrapper">
+                  <div class="personal-details-container">
+                    <div class="form-input-wrapper extended personal">
+                      <div class="form-label">
+                        <span class="label">Vorname*</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended personal">
+                      <div class="form-label">
+                        <span class="label">Nachname*</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended personal">
+                      <div class="form-label">
+                        <span class="label">Straße*</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended personal">
+                      <div class="form-label">
+                        <span class="label">Hausnummer*</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personal-details-container">
+                    <div class="form-input-wrapper extended personal">
+                      <div class="form-label">
+                        <span class="label">PLZ*</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended personal">
+                      <div class="form-label">
+                        <span class="label">Ort*</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended personal">
+                      <div class="form-label">
+                        <span class="label">Telefon*</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                    <div class="form-input-wrapper extended personal">
+                      <div class="form-label">
+                        <span class="label">E-Mail-Adresse*</span>
+                      </div>
+                      <div class="form-input custom">
+                        <input type="text" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="submit-button">
+                  <button>Absennden</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- Frequently Asked Questions -->
+        <section class="myfaq fade-in-up" id="faq">
+          <div class="title-container">
+            <div class="title text-center mb-2">FAQ</div>
+          </div>
+          <div class="container">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Warum spielt der Energiebedarf von Häusern in der
+                    Klimadebatte eine so große Rolle?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Answer goes here...</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Was sind günstige Bedingungen für eine Solarthermieanlage?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Answer goes here...</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Wie funktionieren Sonnenkollektoren?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Answer goes here..</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Wie viel Fläche für die Kollektoren ist notwendig?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Answer goes here...</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Welche Leistung erzielt eine Solarthermieanlage?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Answer goes here...</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Wann amortisiert sich eine Solarthermieanlage?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">Answer goes here...</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    Mit welchen staatlichen Fördermitteln ist zu rechnen?
+                  </button>
+                </h2>
+                <div
+                  id="collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSeven"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Es ist viel in Bewegung bei den Zuschüssen, die beim Neubau
+                    von Häusern und beim energetischen Umbau zu erwarten sind.
+                    Regelungen gibt es im Gebäudeenergiegesetz; es gibt eine
+                    Bundesförderung effiziente Wärmenetze, eine Bundesförderung
+                    effiziente Gebäude und es gibt Unterstützung von der
+                    staatlichen Förderbank KfW. In Teilbereichen haben auch
+                    einige Bundesländer Hilfsprogramme aufgelegt.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Frequently Asked Questions Ends Here -->
+
+        <section class="seperator-container-wrapper">
+          <div class="seperator"></div>
+        </section>
+
+        <section id="footer" class="footer-container-wrapper">
+          <div class="footer-container">
+            <div class="footer-logo">
+              <img src="./images/footer-logo.png" alt="footer-logo" />
+            </div>
+            <div class="footer-categories-container">
+              <div class="footer-categories">
+                <div class="category-label mb-3">
+                  <p class="label">Kontakt</p>
+                </div>
+                <div class="category-details-container">
+                  <div class="category-details">
+                    <p class="detail">SolarRegina GmbH</p>
+                    <p class="detail">Einfriedinger Weg 2d</p>
+                    <p class="detail">29614 Soltau</p>
+                  </div>
+                  <div class="category-details">
+                    <p class="detail"><a href="tel:">Tel: 05191/70070</a></p>
+                    <p class="detail">Fax: 05191/7007-10</p>
+                    <p class="detail">
+                      <a href="mailto:info@solarregina.de"
+                        >E-Mail: info@solarregina.de</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-categories">
+                <div class="category-label mb-3">
+                  <p class="label">Impressum</p>
+                </div>
+                <div class="category-details-container">
+                  <div class="category-details">
+                    <p class="detail">SolarRegina GmbH</p>
+                    <p class="detail">Einfriedinger Weg 2d</p>
+                    <p class="detail">29614 Soltau</p>
+                  </div>
+                  <div class="category-details">
+                    <p class="detail">Geschäftsführer: Hans Hümme</p>
+                    <p class="detail"><a href="tel:">Tel: 05191/70070</a></p>
+                    <p class="detail">
+                      Registergericht Soltau, Handelsregister HRB 12345
+                    </p>
+                    <p class="detail">Finanzamt Soltau, USt.ID: DE449944994</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright-container-wrapper">
+            <div class="copyright-container">
+              <p class="text">© 2024 SolarRegina GmbH | <b>Datenschutz</b></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
