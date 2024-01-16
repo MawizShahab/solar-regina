@@ -21,5 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    autoplay: {
+      delay: 3000, // Set the autoplay delay to 5000 milliseconds (5 seconds)
+      disableOnInteraction: false, // Allow manual interaction (e.g., slide change by user) without stopping autoplay
+    },
   });
 });
