@@ -64,6 +64,8 @@
           nav: true, // Show navigation arrows
           loop: true, // Enable infinite loop
           margin: 15, // Add spacing between images
+          autoplay: true, // Add autoplay
+          autoplayTimeout: 3000, // Set autoplay interval to 5000 milliseconds (5 seconds)
           responsive: {
             0: {
               items: 1, // On small screens, show one image per slide
@@ -216,7 +218,7 @@
             <div class="swiper-button-next"></div> -->
           </div>
         </section>
-        <section class="additional-info-container-wrapper">
+        <section id="unsereExpertise" class="additional-info-container-wrapper">
           <div class="additional-info-container">
             <div class="hero">
               <img src="./images/wir-tun-etwas.png" alt="wir-tun-etwas" />
@@ -925,7 +927,7 @@
               </div>
             </div>
           </div>
-          <div class="copyright-container-wrapper">
+          <div id="datenschutz" class="copyright-container-wrapper">
             <div class="copyright-container">
               <p class="text">© 2024 SolarRegina GmbH | <b>Datenschutz</b></p>
             </div>
