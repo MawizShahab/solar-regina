@@ -64,6 +64,7 @@ nav.categories .link a.active {
 
 .hero-slider-container {
   overflow: hidden;
+  position: relative;
 }
 
 .hero-image-container {
@@ -680,9 +681,56 @@ button.accordion-button,
   width: 100%;
 }
 
-.owl-nav,
 .owl-dots {
   display: none !important;
+}
+
+.owl-nav {
+  display: block !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  /* padding: 30px;
+  background: #fff;
+  border-radius: 50px; */
+  top: 55% !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #f69800;
+  font-size: 45px !important;
+  font-weight: bold;
+}
+
+.owl-stage-outer {
+  position: relative;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 25%;
+}
+
+.owl-prev {
+  left: 0%;
+}
+
+.owl-next {
+  right: 0%;
+}
+
+.owl-nav button span {
+  font-size: 85px !important;
+  color: #f39600;
+  /* font-weight: bold; */
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none !important;
+  color: #f39600 !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -1045,5 +1093,31 @@ button.accordion-button,
 
   .category-details-container {
     gap: 25px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 65% !important;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 25px !important;
+  }
+
+  .owl-nav {
+    margin-top: -10px !important;
+  }
+
+  .owl-nav button span {
+    font-size: 55px !important;
+    color: #f39600;
+    /* font-weight: bold; */
+  }
+
+  .owl-prev,
+  .owl-next {
+    position: absolute;
+    top: 30%;
   }
 }
