@@ -27,3 +27,40 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+/* Handle to close the burger-menu on mobile when any of the menu item clicked */
+
+$(document).ready(function () {
+  // Close Bootstrap burger menu when a menu item is clicked
+  $(".navbar-nav .link a").on("click", function () {
+    // Check if the burger menu is open
+    if ($("#navbarToggler").attr("aria-expanded") === "true") {
+      // Close the burger menu
+      $("#navbarNav").collapse("hide");
+    }
+  });
+});
+
+/* Our team slider code */
+
+$(document).ready(function () {
+  $(".team-slider .owl-carousel").owlCarousel({
+    items: 3, // Display three images per slide
+    nav: true, // Show navigation arrows
+    loop: true, // Enable infinite loop
+    margin: 15, // Add spacing between images
+    autoplay: true, // Add autoplay
+    autoplayTimeout: 3000, // Set autoplay interval to 5000 milliseconds (5 seconds)
+    responsive: {
+      0: {
+        items: 1, // On small screens, show one image per slide
+      },
+      768: {
+        items: 2, // On medium screens, show two images per slide
+      },
+      992: {
+        items: 3, // On larger screens, show three images per slide
+      },
+    },
+  });
+});
